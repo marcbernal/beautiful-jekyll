@@ -34,16 +34,16 @@
             <div class="row-fluid">
                 <div class="col-sm-4">
                     <img src="{{ site.favicon | prepend: site.baseurl }}" title="Avatar" alt="My Avatar">
-                    <h4>{{ site.author.name }}</h4>
-                    <p>{{ site.author.title }}</p>
-                    <p class="muted">{{ site.author.address }}</p>
+                    <h4>Marc Bernal Romeu</h4>
+                    <p>Resume</p>
+                    <p class="muted">Mexico City</p>
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-sm-4 visible-md-block visible-lg-block visible-sm-block">
-                    <p><i class="fa fa-envelope-o fa-fw"></i> {{ site.author.email }} </p>
-                    <p><i class="fa fa-github fa-fw"></i><a href="//github.com/{{ site.author.github }}" target="_blank">  @{{ site.author.github }} </a></p>
-                    <p><i class="fa fa-linkedin-square fa-fw"></i> <a href="//linkedin.com/in/{{ site.author.linkedin }}" target="_blank"> linkedin.com/in/{{ site.author.linkedin }} </a></p>
-                    <p><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/{{ site.author.twitter }}" target="_blank">  @{{ site.author.twitter }} </a></p>
+                    <p><i class="fa fa-envelope-o fa-fw"></i> marcbernal@gmail.com </p>
+                    <p><i class="fa fa-github fa-fw"></i><a href="//github.com/marcbernal" target="_blank">  @marcbernal </a></p>
+                    <p><i class="fa fa-linkedin-square fa-fw"></i> <a href="//linkedin.com/in/marc-bernal-romeu-986a301b" target="_blank"> Linkedin </a></p>
+                    <p><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/marc_bernal" target="_blank">  @marc_bernal </a></p>
                 </div>
                 <div class="col-sm-4 visible-md-block visible-lg-block">
                     <a href="#" class="btn btn-dark"><i class="icon-file icon-white"></i> Download.pdf </a>
@@ -57,259 +57,305 @@
             <div class="container-fluid">
                 <div class="row-fluid">
                     <div class="col-md-8">
-                        {% if site.author.workHistory %}
                         <h3 class="title with-icon"><span class="glyphicon glyphicon-plane cat-title"></span>Work History</h3>
                         <ul class="timeline">
-                            {% for work in site.author.workHistory %}
+
                             <li class="timeline-inverted">
-                                {% if work.started %}
-                                <div class="timeline-badge info">{{ work.started }}</div>
-                                {% endif %}
+                                <div class="timeline-badge info">2015</div>
                                 <div class="timeline-panel grid-block">
                                     <div class="timeline-heading">
-                                        {% if work.company %}
-                                        <h4 class="timeline-title">{{ work.company }} </h4>
-                                        {% endif %}
+                                        <h4 class="timeline-title">Nearsoft</h4>
                                         <p>
                                             <small class="text-muted">
-                                                {% if work.title %}
-                                                {{ work.title }}
-                                                {% endif %}
+                                                Senior Programmer at eduProject ELL LLC,
                                             </small>
                                         </p>
                                         <p>
                                             <small class="text-muted">
-                                                {% if work.duration %}
-                                                <i class="fa fa-calendar"></i> {{ work.duration }} |
-                                                {% endif %}
-                                                {% if work.location %}
-                                                <i class="fa fa-map-marker"></i>  {{ work.location }}
-                                                {% endif %}
+                                                <i class="fa fa-calendar"></i> (2015 - Current) |
+                                                <i class="fa fa-map-marker"></i>  Mexico City, Mexico
                                             </small>
                                         </p>
                                     </div>
                                     <div class="timeline-body">
-                                        {% if work.description %}
-                                        <p>{{ work.description }}</p>
-                                        {% endif %}
+                                        <p>Full stack developer in eduProject ELL LLC. Schools' website for ELL program student's management.</p>
+                                        <p>Technologies: .NET 4.6, C#, Javascript, AngularJs, Breeze, Bootstrap, SQL Server 2014, Azure</p>
+                                        <p>Methodologies: Scrum</p>
                                     </div>
                                 </div>
                             </li>
-                            {% endfor %}
+
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge info">2013</div>
+                                <div class="timeline-panel grid-block">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">TV Azteca</h4>
+                                        <p>
+                                            <small class="text-muted">
+                                                Senior Programmer Analyst
+                                            </small>
+                                        </p>
+                                        <p>
+                                            <small class="text-muted">
+                                                <i class="fa fa-calendar"></i> (2013 - 2015) |
+                                                <i class="fa fa-map-marker"></i>  Mexico City, Mexico
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Development, analysis and implementation of different web portals for the sales and accounting department. WCF Services development for communications with SAP services.</p>
+                                        <p>Technologies: .NET 3.5, 4.0, 4.5, C#, WCF, Oracle 11g, ASP.NET, JavaScript</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge info">2010</div>
+                                <div class="timeline-panel grid-block">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Indra Sistemas de Seguridad</h4>
+                                        <p>
+                                            <small class="text-muted">
+                                                Senior Programmer Analyst
+                                            </small>
+                                        </p>
+                                        <p>
+                                            <small class="text-muted">
+                                                <i class="fa fa-calendar"></i> (2010 - 2013) |
+                                                <i class="fa fa-map-marker"></i>  Barcelona, Spain
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Development, analysis and software implementation of physical security systems.</p>
+                                        <p>Technologies: .NET 1.1, 2.0, 3.5, 4.0, WPF, WFC, SQL Server 2008, Oracle, Firebird, C++, DirectShow, TFS, ALM, N-Tier architecture, Unit testing</p>
+                                        <p>Methodologies: Scrum</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge info">2008</div>
+                                <div class="timeline-panel grid-block">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Winworld, S.L.</h4>
+                                        <p>
+                                            <small class="text-muted">
+                                                Team Lead
+                                            </small>
+                                        </p>
+                                        <p>
+                                            <small class="text-muted">
+                                                <i class="fa fa-calendar"></i> (2008 - 2010) |
+                                                <i class="fa fa-map-marker"></i>  Barcelona, Spain
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Resources manager, analysis of client requirements and application designer.</p>
+                                        <p>Methodologies: Scrum</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge info">2005</div>
+                                <div class="timeline-panel grid-block">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Winworld, S.L.</h4>
+                                        <p>
+                                            <small class="text-muted">
+                                                Programmer Analyst
+                                            </small>
+                                        </p>
+                                        <p>
+                                            <small class="text-muted">
+                                                <i class="fa fa-calendar"></i> (2005 - 2008) |
+                                                <i class="fa fa-map-marker"></i>  Barcelona, Spain
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Development, analysis and software implementation for different kind of sectors.</p>
+                                        <p>Technologies: .NET 1.1, 2.0, 3.5, C#, ASP .NET, SQL Server 2008, Oracle, Firebird, MySQL, Delphi, N-Tier architecture</p>
+                                        <p>Methodologies: Scrum</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge info">2004</div>
+                                <div class="timeline-panel grid-block">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Laboratorios Ysana</h4>
+                                        <p>
+                                            <small class="text-muted">
+                                                Programmer Analyst
+                                            </small>
+                                        </p>
+                                        <p>
+                                            <small class="text-muted">
+                                                <i class="fa fa-calendar"></i> (2004 - 2005) |
+                                                <i class="fa fa-map-marker"></i>  Barcelona, Spain
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Development, analysis and software implementation of ERP application for pharmaceutical sector.</p>
+                                        <p>Technologies:  .NET 1.1, Delphi, Firebird</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge info">2000</div>
+                                <div class="timeline-panel grid-block">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Indra Sistemas</h4>
+                                        <p>
+                                            <small class="text-muted">
+                                                Internship developer
+                                            </small>
+                                        </p>
+                                        <p>
+                                            <small class="text-muted">
+                                                <i class="fa fa-calendar"></i> (2000 - 2004) |
+                                                <i class="fa fa-map-marker"></i>  Barcelona, Spain
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Software development </p>
+                                        <p>Technologies: .NET 1.1, VB 6, Oracle</p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        {% endif %}
-                        {% if site.author.educationHistory %}
+
+                        <!--Education-->
                         <h3 class="title with-icon"><span class="fa fa-book cat-title"></span>Education History</h3>
                         <ul class="timeline">
-                            {% for education in site.author.educationHistory %}
                             <li class="timeline-inverted">
-                                {% if education.started %}
-                                <div class="timeline-badge info">{{ education.started }}</div>
-                                {% endif %}
+                                <div class="timeline-badge info">1998</div>
                                 <div class="timeline-panel grid-block">
                                     <div class="timeline-heading">
-                                        {% if education.organization %}
-                                        <h4 class="timeline-title">{{ education.organization }}</h4>
-                                        {% endif %}
+                                        <h4 class="timeline-title">Universitat Autònoma de Barcelona (Tomàs Cerdà)</h4>
                                         <p>
                                             <small class="text-muted">
-                                                {% if education.degree %}
-                                                {{ education.degree }}
-                                                {% endif %}
-                                                {% if education.major %}
-                                                , {{ education.major }}
-                                                {% endif %}
+                                                Bachelor
+                                                , Technical Engineer in Computing Management
                                             </small>
                                         </p>
                                         <p>
                                             <small class="text-muted">
-                                                {% if education.duration %}
-                                                <i class="fa fa-calendar"></i> {{ education.duration }} |
-                                                {% endif %}
-                                                {% if education.location %}
-                                                <i class="fa fa-map-marker"></i>  {{ education.location }}
-                                                {% endif %}
+                                                <i class="fa fa-calendar"></i> (1998-2003) |
+                                                <i class="fa fa-map-marker"></i>  Barcelona, Spain
                                             </small>
                                         </p>
                                     </div>
                                     <div class="timeline-body">
-                                        {% if education.description %}
-                                        <p>{{ education.description }}</p>
-                                        {% endif %}
+                                        <!--<p>{{ education.description }}</p>-->
                                     </div>
                                 </div>
                             </li>
-                            {% endfor %}
                         </ul>
-                        {% endif %}
                     </div>
+
+
                     <div class="col-md-4">
-                        {% if site.author.stackoverflow or site.author.programmingSkills %}
                         <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
-                        {% if site.author.stackoverflow %}
-                        <div class="grid-block">
-                            <p><a href="//stackoverflow.com/users/{{ site.author.stackoverflow }}"><img src="//stackoverflow.com/users/flair/{{ site.author.stackoverflow }}.png"></a></p>
-                            <ul class="list-unstyled list-stackoverflow" id="stackoverflow_questions_and_answers"></ul>
-                            <script type="text/javascript">
-                                $(function () {
-                                    var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.author.stackoverflow }}/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow";
-                                    var api_url_format_questions = "//api.stackexchange.com/2.2/questions/%question_ids%?site=stackoverflow";
 
-                                    $.get(api_url_user, function (data_user) {
-                                        if (!data_user) {
-                                            return;
-                                        }
-                                        if (!data_user.items) {
-                                            return;
-                                        }
-                                        if (!data_user.items.length) {
-                                            return;
-                                        }
-
-                                        var question_ids = [];
-                                        var complex_questions = {};
-                                        $.each(data_user.items, function (index, item) {
-                                            if (!item) {
-                                                return;
-                                            }
-                                            if (!item.question_id) {
-                                                return;
-                                            }
-                                            if (!item.answer_id) {
-                                                return;
-                                            }
-                                            if (!item.score) {
-                                                return;
-                                            }
-
-                                            complex_questions[item.question_id] = {
-                                                "question_id": item.question_id,
-                                                "answer_id": item.answer_id,
-                                                "score": humanize_score(item.score),
-                                                "is_accepted": item.is_accepted
-                                            };
-                                            question_ids.push(item.question_id);
-                                        });
-
-                                        var api_url_questions = api_url_format_questions.replace('%question_ids%', question_ids.join(';'));
-
-                                        $.get(api_url_questions, function (data_questions) {
-                                            if (!data_questions) {
-                                                return;
-                                            }
-                                            if (!data_questions.items) {
-                                                return;
-                                            }
-                                            if (!data_questions.items.length) {
-                                                return;
-                                            }
-
-                                            $.each(data_questions.items, function (index, item) {
-                                                if (!item) {
-                                                    return;
-                                                }
-                                                if (!item.question_id) {
-                                                    return;
-                                                }
-                                                var complex_question = complex_questions[item.question_id];
-                                                if (!complex_question) {
-                                                    return;
-                                                }
-
-                                                complex_question.title = item.title;
-                                                complex_question.link = item.link;
-                                            });
-
-                                            render_complex_questions(complex_questions);
-                                        });
-                                    });
-                                });
-                                function humanize_score(score) {
-                                    if (!score) {
-                                        return;
-                                    }
-
-                                    if (score / 1000 > 1) {
-                                        return (score / 1000) + "k";
-                                    } else {
-                                        return score;
-                                    }
-                                }
-                                function render_complex_questions(complex_questions) {
-                                    if (!complex_questions) {
-                                        return;
-                                    }
-
-                                    complex_questions = $.map(complex_questions, function (complex_question) {
-                                        return [complex_question];
-                                    });
-                                    complex_questions.sort(function (a, b) {
-                                        return b.score - a.score;
-                                    });
-
-                                    $stackoverflow_questions_and_answers = $('#stackoverflow_questions_and_answers');
-
-                                    $.each(complex_questions, function (index, complex_question) {
-                                        var link = complex_question.link + '#answer-' + complex_question.answer_id;
-                                        var $li = $('<li />');
-                                        $('<span />')
-                                                .addClass('badge')
-                                                .addClass(complex_question.is_accepted ? 'progress-bar-success' : '')
-                                                .text(complex_question.score)
-                                                .appendTo($li);
-                                        $('<a />')
-                                                .attr('href', link)
-                                                .attr('target', '_blank')
-                                                .text(complex_question.title)
-                                                .appendTo($li);
-                                        $li.appendTo($stackoverflow_questions_and_answers);
-                                    });
-                                }
-                            </script>
-                        </div>
-                        {% endif %}
-                        {% if site.author.programmingSkills %}
+                        <!--Programming skills-->
                         <div class="grid-block">
                             <ul class="list-unstyled list-skills">
-                                {% for programmingSkill in site.author.programmingSkills %}
                                 <li>
-                                    {% if programmingSkill.name %}
-                                    <span class="caption-skill">{{ programmingSkill.name }}</span>
-                                    {% endif %}
-                                    {% if programmingSkill.percentage %}
+                                    <span class="caption-skill">C#</span>
                                     <div class="progress">
-                                        <div class="progress-bar" style="width: {{ programmingSkill.percentage }}">
-                                            <span>{{ programmingSkill.percentage }} </span>
+                                        <div class="progress-bar" style="width: 90%">
+                                            <span>90 %</span>
                                         </div>
                                     </div>
-                                    {% endif %}
                                 </li>
-                                {% endfor %}
+                                <li>
+                                    <span class="caption-skill">Javascript</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 80%">
+                                            <span>80 %</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="caption-skill">AngularJs</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 80%">
+                                            <span>80 %</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="caption-skill">SQL Server</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 90%">
+                                            <span>90 %</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="caption-skill">Angular 2</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 40%">
+                                            <span>40 %</span>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
-                        {% endif %}
-                        {% endif %}
-                        {% if site.author.languages %}
+
+                        <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Methodologies</h3>
+                        <div class="grid-block">
+                            <ul class="list-unstyled list-skills">
+                                <li>
+                                    <span class="caption-skill">Scrum</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 90%">
+                                            <span>95 %</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="caption-skill">Kanban</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 80%">
+                                            <span>90 %</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--Languages-->
+
                         <div class="deviter"></div>
                         <h3 class="title with-icon"><span class="fa fa-globe cat-title"></span> Language Skills</h3>
                         <div class="grid-block">
                             <ul class="list-unstyled list-strip">
-                                {% for language in site.author.languages %}
-                                {% if language.name %}
-                                {% if language.proficiency %}
                                 <li>
-                                    <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float">{{ language.proficiency }}</span>{{ language.name }}
+                                    <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float">Native</span>Spanish
                                 </li>
-                                {% endif %}
-                                {% endif %}
-                                {% endfor %}
+                                <li>
+                                    <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float">Native</span>Catalan
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float">Professional</span>English
+                                </li>
                             </ul>
                         </div>
-                        {% endif %}
+
                         <div class="deviter"></div>
                         <h3 class="title with-icon"><span class="fa fa-location-arrow cat-title"></span> Location</h3>
                         <div class="grid-block">
-                            <iframe src="https://www.google.com/maps/embed/v1/place?q={{ site.author.address }}&key=AIzaSyClEWLh20lxrQBFR7omuuVESviszPxONyk" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30109.484495670644!2d-99.18685778914505!3d19.382763162399122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff9fbefafdf9%3A0x52271d1aef7a49f3!2sColonia+del+Valle%2C+Mexico+City!5e0!3m2!1sen!2smx!4v1472684283166"
+                                    width="100%" height="100%" frameborder="0" style="border:0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -321,7 +367,14 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="col-md-12">
-                    Copyright &copy; 2016 {{ site.author.name }} - All rights reserved.
+                    Copyright &copy;
+                <script language="JavaScript" type="text/javascript">
+                    now = new Date
+                    theYear=now.getYear()
+                    if (theYear < 1900)
+                        theYear=theYear+1900
+                    document.write(theYear)
+                </script> Marc Bernal Romeu - All rights reserved.
                 </div>
             </div>
         </div>
